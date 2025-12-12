@@ -20,6 +20,9 @@ bld/
 [Oo]bj/
 [Ll]og/
 
+# 但保留 qt_dlls 目錄中的 DLL 文件
+!qt_dlls/
+
 # Visual C++ cache files
 ipch/
 *.aps
@@ -57,7 +60,9 @@ moc_*.h
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
+
+# 但保留 qt_dlls 目錄中的 DLL
+!qt_dlls/**/*.dll
 
 # Compiled Static libraries
 *.lai
